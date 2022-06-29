@@ -7,7 +7,7 @@ metadata:
 spec:
   params:
   - name: imageRepo
-    value: quay.io/khomreha/gitops1
+    value: repo.ficld.ir/khomreha/gitops1
   - name: tlsVerify
     value: "true"
 status: {}

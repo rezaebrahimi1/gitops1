@@ -22,7 +22,7 @@ spec:
         app.kubernetes.io/part-of: full-stack
     spec:
       containers:
-      - image: quay.io/khomreha/backend-service:latest
+      - image: repo.ficld.ir/khomreha/backend-service:latest
         imagePullPolicy: IfNotPresent
         name: backend-service
         ports:
