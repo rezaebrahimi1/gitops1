@@ -1,0 +1,13 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  creationTimestamp: null
+  name: rz1-stage-full-stack-frontend-service-binding
+  namespace: rz1-cicd
+spec:
+  params:
+  - name: imageRepo
+    value: quay.io/khomreha/frontend-service
+  - name: tlsVerify
+    value: "true"
+status: {}

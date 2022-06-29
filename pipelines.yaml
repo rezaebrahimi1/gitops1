@@ -24,6 +24,36 @@ environments:
       bindings:
       - github-push-binding
       template: app-ci-template
-- name: rz1-stage
+- apps:
+  - name: full-stack
+    services:
+    - name: frontend-service
+      pipelines:
+        integration:
+          bindings:
+          - rz1-stage-full-stack-frontend-service-binding
+          - github-push-binding
+      source_url: https://github.com/rezaebrahimi1/frontend-service.git
+      webhook:
+        secret:
+          name: webhook-secret-rz1-stage-frontend-service
+          namespace: rz1-cicd
+    - name: backend-service
+      pipelines:
+        integration:
+          bindings:
+          - rz1-stage-full-stack-backend-service-binding
+          - github-push-binding
+      source_url: https://github.com/rezaebrahimi1/backend-service.git
+      webhook:
+        secret:
+          name: webhook-secret-rz1-stage-backend-service
+          namespace: rz1-cicd
+  name: rz1-stage
+  pipelines:
+    integration:
+      bindings:
+      - github-push-binding
+      template: app-ci-template
 gitops_url: https://github.com/rezaebrahimi1/gitops1.git
 version: 1

@@ -4,3 +4,4 @@ resources:
 - rz1-dev-app-taxi-app.yaml
 - rz1-dev-env-app.yaml
 - rz1-stage-env-app.yaml
+- rz1-stage-full-stack-app.yaml
