@@ -1,0 +1,13 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  creationTimestamp: null
+  name: rz1-dev-app-taxi-taxi-binding
+  namespace: rz1-cicd
+spec:
+  params:
+  - name: imageRepo
+    value: quay.io/khomreha/gitops1
+  - name: tlsVerify
+    value: "true"
+status: {}

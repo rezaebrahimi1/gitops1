@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  creationTimestamp: null
+  name: rz1-stage-env
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: rz1-stage
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: environments/rz1-stage/env/overlays
+    repoURL: https://github.com/rezaebrahimi1/gitops1.git
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+status:
+  health: {}
+  summary: {}
+  sync:
+    comparedTo:
+      destination: {}
+      source:
+        repoURL: ""
+    status: ""

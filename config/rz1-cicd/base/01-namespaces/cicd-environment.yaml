@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    app.openshift.io/vcs-uri: https://github.com/rezaebrahimi1/gitops1.git?ref=HEAD
+  creationTimestamp: null
+  name: rz1-cicd
+spec: {}
+status: {}
