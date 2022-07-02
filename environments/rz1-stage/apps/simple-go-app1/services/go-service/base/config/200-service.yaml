@@ -5,7 +5,7 @@ metadata:
   labels:
     app.kubernetes.io/name: go-service
     app.kubernetes.io/part-of: simple-go-app1
-  name: simple-go-app1
+  name: go-service
   namespace: rz1-stage
 spec:
   ports:
