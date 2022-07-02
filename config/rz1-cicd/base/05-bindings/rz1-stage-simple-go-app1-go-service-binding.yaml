@@ -1,0 +1,13 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  creationTimestamp: null
+  name: rz1-stage-simple-go-app1-go-service-binding
+  namespace: rz1-cicd
+spec:
+  params:
+  - name: imageRepo
+    value: quay.io/khomreha/go-simple
+  - name: tlsVerify
+    value: "true"
+status: {}

@@ -49,6 +49,19 @@ environments:
         secret:
           name: webhook-secret-rz1-stage-backend-service
           namespace: rz1-cicd
+  - name: simple-go-app1
+    services:
+    - name: go-service
+      pipelines:
+        integration:
+          bindings:
+          - rz1-stage-simple-go-app1-go-service-binding
+          - github-push-binding
+      source_url: https://github.com/rezaebrahimi1/myhello.git
+      webhook:
+        secret:
+          name: webhook-secret-rz1-stage-go-service
+          namespace: rz1-cicd
   name: rz1-stage
   pipelines:
     integration:

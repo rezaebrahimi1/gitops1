@@ -22,7 +22,7 @@ spec:
         app.kubernetes.io/part-of: full-stack
     spec:
       containers:
-      - image: quay.io/khomreha/frontend-service:latest
+      - image: quay.io/khomreha/frontend-service:master-c9344980c9e5851abcfac77020bd2ab3e7853735
         imagePullPolicy: IfNotPresent
         name: frontend-service
         ports:

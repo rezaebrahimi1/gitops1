@@ -5,3 +5,4 @@ resources:
 - rz1-dev-env-app.yaml
 - rz1-stage-env-app.yaml
 - rz1-stage-full-stack-app.yaml
+- rz1-stage-simple-go-app1-app.yaml
