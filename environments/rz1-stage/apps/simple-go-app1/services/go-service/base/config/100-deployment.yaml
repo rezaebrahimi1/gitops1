@@ -22,7 +22,7 @@ spec:
         app.kubernetes.io/part-of: simple-go-app1
     spec:
       containers:
-      - image:  quay.io/khomreha/go-simple:latest
+      - image:  quay.io/khomreha/go-simple:main-979e48dbdef599fa96cf2070bb8758063b4820de 
         imagePullPolicy: IfNotPresent
         name: go-service
         ports:
